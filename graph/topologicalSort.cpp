@@ -27,7 +27,7 @@ class Graph{
 };
 bool directedCycle(Graph g,int cur,vector<bool>&vis,vector<bool>&recPath){// for directed graph--> core logic is that during dfs if we found neighbour that
             vis[cur]=true;                                                      //is visted and is part of curr recurrisive call or path through which we reach
-                                                                      // that node the cycle exist
+                                             // that node the cycle exist
             recPath[cur]=true;
             for(auto v:g.l[cur]){
                 if(!vis[v]){
