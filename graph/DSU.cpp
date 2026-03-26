@@ -32,7 +32,7 @@ class DSU{
         }
         else{
              Uparent[up_v]=up_u;
-             rank[up_v]++;
+             rank[up_u]++;
         }
 
     }
