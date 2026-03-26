@@ -24,10 +24,10 @@ class DSU{
     void UnionByRank(int u,int v){
         int up_u=find(u);
         int up_v=find(v);
-        if(rank[u]<rank[v]){
+        if(rank[up_u]<rank[up_v]){
             Uparent[up_u]=up_v;
         }
-        else if(rank[v]<rank[u]){
+        else if(rank[up_v]<rank[up_u]){
             Uparent[up_v]=up_u;
         }
         else{
