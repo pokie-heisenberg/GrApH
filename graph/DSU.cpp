@@ -22,8 +22,8 @@ class DSU{
         return Uparent[u]=find(Uparent[u]);
     }
     void UnionByRank(int u,int v){
-        int up_u=Uparent[u];
-        int up_v=Uparent[v];
+        int up_u=find(u);
+        int up_v=find(v);
         if(rank[u]<rank[v]){
             Uparent[up_u]=up_v;
         }
